@@ -7,8 +7,9 @@ public class frmMenu extends javax.swing.JFrame {
      * Creates new form Menu
      */
     public frmMenu() {
-        initComponents();  
-                this.setLocationRelativeTo(null);
+        initComponents();
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        this.setLocationRelativeTo(null);
 
     }
 
@@ -77,6 +78,11 @@ public class frmMenu extends javax.swing.JFrame {
         jMenu3.setText("Reservas");
 
         btbReservar.setText("Rerservar Libro");
+        btbReservar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btbReservarActionPerformed(evt);
+            }
+        });
         jMenu3.add(btbReservar);
 
         btbVerReservas.setText("Ver reservas");
@@ -113,6 +119,11 @@ public class frmMenu extends javax.swing.JFrame {
         categoria.setLocationRelativeTo(null);
         dispose();
     }//GEN-LAST:event_btbCategoriasActionPerformed
+
+    private void btbReservarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbReservarActionPerformed
+        frmReservas reservas = new frmReservas();
+        reservas.setVisible(true);
+    }//GEN-LAST:event_btbReservarActionPerformed
 
     /**
      * @param args the command line arguments

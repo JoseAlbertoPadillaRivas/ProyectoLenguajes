@@ -59,6 +59,7 @@ public class frmListaLibros extends javax.swing.JFrame {
         btnCargarCampos = new javax.swing.JButton();
         btnVolver = new javax.swing.JButton();
         btnBuscarId = new javax.swing.JButton();
+        btnReservar = new javax.swing.JButton();
 
         jMenu1.setText("jMenu1");
 
@@ -117,6 +118,13 @@ public class frmListaLibros extends javax.swing.JFrame {
 
         btnBuscarId.setText("Buscar por id");
 
+        btnReservar.setText("RESERVAR");
+        btnReservar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReservarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -153,6 +161,8 @@ public class frmListaLibros extends javax.swing.JFrame {
                         .addGap(18, 18, 18)
                         .addComponent(txtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, 164, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnReservar, javax.swing.GroupLayout.PREFERRED_SIZE, 83, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)
                         .addComponent(btnCargarCampos)))
                 .addContainerGap())
             .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 693, Short.MAX_VALUE)
@@ -185,7 +195,8 @@ public class frmListaLibros extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lbFecha)
                     .addComponent(txtFecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnCargarCampos))
+                    .addComponent(btnCargarCampos)
+                    .addComponent(btnReservar))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 225, Short.MAX_VALUE))
         );
@@ -250,6 +261,11 @@ public class frmListaLibros extends javax.swing.JFrame {
         menu.setLocationRelativeTo(null);
         dispose();
     }//GEN-LAST:event_btnVolverActionPerformed
+
+    private void btnReservarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReservarActionPerformed
+        frmReservas reservas = new frmReservas();
+        reservas.setVisible(true);
+    }//GEN-LAST:event_btnReservarActionPerformed
 
     /**
      * @param args the command line arguments
@@ -331,6 +347,7 @@ public class frmListaLibros extends javax.swing.JFrame {
     private javax.swing.JButton btnCargarCampos;
     private javax.swing.JButton btnEditar;
     private javax.swing.JButton btnEliminar;
+    private javax.swing.JButton btnReservar;
     private javax.swing.JButton btnVolver;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JScrollPane jScrollPane1;
