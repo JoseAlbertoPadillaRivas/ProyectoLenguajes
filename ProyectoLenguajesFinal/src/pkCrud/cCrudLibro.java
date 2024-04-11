@@ -97,7 +97,7 @@ public class cCrudLibro {
         }
     }
 
-    public void eliminarLribo(cLibro libro) throws SQLException {
+    public void eliminarLibro(cLibro libro) throws SQLException {
         Connection con = cConexion.getConnection();
 
         try {

@@ -246,7 +246,7 @@ public class frmListaLibros extends javax.swing.JFrame {
         cLibro eliminarLibro = new cLibro(idLibro);
         try {
             cCrudLibro crud = new cCrudLibro();
-            crud.eliminarLribo(eliminarLibro);
+            crud.eliminarLibro(eliminarLibro);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Error: " + e);
         }
