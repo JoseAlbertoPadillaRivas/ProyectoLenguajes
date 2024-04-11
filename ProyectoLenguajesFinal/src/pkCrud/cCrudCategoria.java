@@ -9,7 +9,6 @@ public class cCrudCategoria {
 
     public void insertarCategoria(cCategoria categoria) throws SQLException {
         Connection con = cConexion.getConnection();
-
         try {
             String llamarSP = "{call CREARCATEGORIA(?,?)}";
             CallableStatement cst = con.prepareCall(llamarSP);

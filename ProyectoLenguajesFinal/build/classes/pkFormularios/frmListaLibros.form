@@ -65,7 +65,6 @@
                           <Component id="btnEliminar" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="btnEditar" alignment="1" min="-2" max="-2" attributes="0"/>
                           <Component id="btnVolver" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="btnBuscarId" min="-2" max="-2" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
@@ -73,7 +72,7 @@
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="txtFecha" min="-2" pref="164" max="-2" attributes="0"/>
                       <EmptySpace max="32767" attributes="0"/>
-                      <Component id="btnReservar" min="-2" pref="83" max="-2" attributes="0"/>
+                      <Component id="btnReservar" min="-2" pref="97" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="btnCargarCampos" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -93,18 +92,24 @@
                   <Component id="btnVolver" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbNombre" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtNombreLibro" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnBuscarId" alignment="3" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="1" attributes="0">
+                      <Component id="btnEditar" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                  </Group>
+                  <Group type="102" attributes="0">
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lbNombre" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtNombreLibro" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="3" attributes="0">
+                          <Component id="lbPaginas" alignment="3" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtPaginas" alignment="3" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace max="-2" attributes="0"/>
+                  </Group>
               </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="3" attributes="0">
-                  <Component id="lbPaginas" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtPaginas" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="btnEditar" alignment="3" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lbCategoria" min="-2" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
@@ -120,7 +125,7 @@
                   <Component id="btnReservar" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace type="separate" max="-2" attributes="0"/>
-              <Component id="jScrollPane1" pref="225" max="32767" attributes="0"/>
+              <Component id="jScrollPane1" pref="239" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -246,11 +251,6 @@
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnVolverActionPerformed"/>
       </Events>
-    </Component>
-    <Component class="javax.swing.JButton" name="btnBuscarId">
-      <Properties>
-        <Property name="text" type="java.lang.String" value="Buscar por id"/>
-      </Properties>
     </Component>
     <Component class="javax.swing.JButton" name="btnReservar">
       <Properties>
