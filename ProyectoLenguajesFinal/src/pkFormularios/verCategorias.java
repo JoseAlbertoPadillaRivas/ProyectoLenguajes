@@ -17,8 +17,8 @@ import pkCrud.cCrudCategoria;
 public class verCategorias extends javax.swing.JFrame {
 
     private cCrudCategoria categoria;
-    private int IdCategoria;
-    private String Nombre;
+    private int idCategoria;
+    private String nombre;
 
     public verCategorias() {
         initComponents();
@@ -36,7 +36,6 @@ public class verCategorias extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        txtCategoria = new javax.swing.JTextField();
         jScrollPane1 = new javax.swing.JScrollPane();
         tbCategoria = new javax.swing.JTable();
         btnEditar = new javax.swing.JButton();
@@ -46,6 +45,7 @@ public class verCategorias extends javax.swing.JFrame {
         lbNombre = new javax.swing.JLabel();
         lbCategoria = new javax.swing.JLabel();
         txtNombre = new javax.swing.JTextField();
+        txtCategoria = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -106,11 +106,11 @@ public class verCategorias extends javax.swing.JFrame {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(lbNombre)
                                 .addGap(18, 18, 18)
-                                .addComponent(txtNombre))
+                                .addComponent(txtNombre, javax.swing.GroupLayout.PREFERRED_SIZE, 170, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(lbCategoria)
-                                .addGap(18, 18, 18)
-                                .addComponent(txtCategoria, javax.swing.GroupLayout.DEFAULT_SIZE, 148, Short.MAX_VALUE)))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(txtCategoria)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(btnEliminar, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -128,9 +128,11 @@ public class verCategorias extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnVolver)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addComponent(lbCategoria)
-                        .addComponent(txtCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(lbCategoria)
+                            .addComponent(txtCategoria, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(4, 4, 4)))
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -142,7 +144,7 @@ public class verCategorias extends javax.swing.JFrame {
                 .addGap(18, 18, 18)
                 .addComponent(btnCargarCampos)
                 .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 217, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 213, Short.MAX_VALUE))
         );
 
         pack();
@@ -166,8 +168,8 @@ public class verCategorias extends javax.swing.JFrame {
 
     private void btnEliminarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnEliminarActionPerformed
 
-        int IdCategoria = Integer.parseInt(txtCategoria.getText());
-        cCategoria eliminarCategoria = new cCategoria(IdCategoria);
+        int idCategoria = Integer.parseInt(txtCategoria.getText());
+        cCategoria eliminarCategoria = new cCategoria(idCategoria);
         try {
             cCrudCategoria crud = new cCrudCategoria();
             crud.eliminarCategoria(eliminarCategoria);
@@ -175,8 +177,8 @@ public class verCategorias extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null, "Error: " + e);
         }
         cargarRegistros();
-        limpiar();
-
+        limpiar();    
+        
     }//GEN-LAST:event_btnEliminarActionPerformed
 
     private void btnCargarCamposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarCamposActionPerformed
@@ -246,8 +248,8 @@ public class verCategorias extends javax.swing.JFrame {
 
             for (cCategoria categoria : listaCategorias) {
                 Object[] fila = {
-                    categoria.getIdCategoria(),
-                    categoria.getNombre(),};
+                    categoria.getidCategoria(),
+                    categoria.getnombre(),};
                 modeloTabla.addRow(fila);
             }
 

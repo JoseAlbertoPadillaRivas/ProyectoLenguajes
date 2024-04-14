@@ -27,13 +27,18 @@ public class frmMenu extends javax.swing.JFrame {
         jMenuItem5 = new javax.swing.JMenuItem();
         jComboBox1 = new javax.swing.JComboBox<>();
         jMenuBar1 = new javax.swing.JMenuBar();
-        jMenu1 = new javax.swing.JMenu();
-        btbLibros = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         btbCategorias = new javax.swing.JMenuItem();
+        brbVerCategoria = new javax.swing.JCheckBoxMenuItem();
+        jMenu1 = new javax.swing.JMenu();
+        btbLibros = new javax.swing.JMenuItem();
+        btbVerLibros = new javax.swing.JCheckBoxMenuItem();
         jMenu3 = new javax.swing.JMenu();
         btbReservar = new javax.swing.JMenuItem();
         btbVerReservas = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
+        btbUsuarios = new javax.swing.JCheckBoxMenuItem();
+        btbVerUsuarios = new javax.swing.JCheckBoxMenuItem();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -49,7 +54,33 @@ public class frmMenu extends javax.swing.JFrame {
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
 
+        jMenu2.setText("Categorias");
+
+        btbCategorias.setText("Agregar Categoría");
+        btbCategorias.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btbCategoriasActionPerformed(evt);
+            }
+        });
+        jMenu2.add(btbCategorias);
+
+        brbVerCategoria.setSelected(true);
+        brbVerCategoria.setText("Ver Categorias");
+        brbVerCategoria.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                brbVerCategoriaActionPerformed(evt);
+            }
+        });
+        jMenu2.add(brbVerCategoria);
+
+        jMenuBar1.add(jMenu2);
+
         jMenu1.setText("Libros ");
+        jMenu1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenu1ActionPerformed(evt);
+            }
+        });
 
         btbLibros.setText("Administrar Libros");
         btbLibros.addActionListener(new java.awt.event.ActionListener() {
@@ -59,19 +90,11 @@ public class frmMenu extends javax.swing.JFrame {
         });
         jMenu1.add(btbLibros);
 
+        btbVerLibros.setSelected(true);
+        btbVerLibros.setText("Ver Libros");
+        jMenu1.add(btbVerLibros);
+
         jMenuBar1.add(jMenu1);
-
-        jMenu2.setText("Categorias");
-
-        btbCategorias.setText("Administrar Categoría");
-        btbCategorias.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btbCategoriasActionPerformed(evt);
-            }
-        });
-        jMenu2.add(btbCategorias);
-
-        jMenuBar1.add(jMenu2);
 
         jMenu3.setText("Reservas");
 
@@ -88,6 +111,28 @@ public class frmMenu extends javax.swing.JFrame {
 
         jMenuBar1.add(jMenu3);
 
+        jMenu4.setText("Usuarios");
+
+        btbUsuarios.setSelected(true);
+        btbUsuarios.setText("Agregar Usuario");
+        btbUsuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btbUsuariosActionPerformed(evt);
+            }
+        });
+        jMenu4.add(btbUsuarios);
+
+        btbVerUsuarios.setSelected(true);
+        btbVerUsuarios.setText("Ver Usuarios");
+        btbVerUsuarios.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btbVerUsuariosActionPerformed(evt);
+            }
+        });
+        jMenu4.add(btbVerUsuarios);
+
+        jMenuBar1.add(jMenu4);
+
         setJMenuBar(jMenuBar1);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -98,7 +143,7 @@ public class frmMenu extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 279, Short.MAX_VALUE)
+            .addGap(0, 281, Short.MAX_VALUE)
         );
 
         pack();
@@ -122,6 +167,27 @@ public class frmMenu extends javax.swing.JFrame {
         frmReservas reservas = new frmReservas();
         reservas.setVisible(true);
     }//GEN-LAST:event_btbReservarActionPerformed
+
+    private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
+        frmListaLibros verLibros = new frmListaLibros();
+        verLibros.setVisible(true);
+    }//GEN-LAST:event_jMenu1ActionPerformed
+
+    private void btbUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbUsuariosActionPerformed
+        frmRegistrarse agregarUsuario = new frmRegistrarse();
+        agregarUsuario.setVisible(true);
+    }//GEN-LAST:event_btbUsuariosActionPerformed
+
+    private void btbVerUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbVerUsuariosActionPerformed
+        verUsuarios verUsuarios = new verUsuarios();
+        verUsuarios.setVisible(true);
+    }//GEN-LAST:event_btbVerUsuariosActionPerformed
+
+    private void brbVerCategoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brbVerCategoriaActionPerformed
+        verCategorias verCategorias = new verCategorias();
+        verCategorias.setVisible(true);
+               
+    }//GEN-LAST:event_brbVerCategoriaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -160,14 +226,19 @@ public class frmMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JCheckBoxMenuItem brbVerCategoria;
     private javax.swing.JMenuItem btbCategorias;
     private javax.swing.JMenuItem btbLibros;
     private javax.swing.JMenuItem btbReservar;
+    private javax.swing.JCheckBoxMenuItem btbUsuarios;
+    private javax.swing.JCheckBoxMenuItem btbVerLibros;
     private javax.swing.JMenuItem btbVerReservas;
+    private javax.swing.JCheckBoxMenuItem btbVerUsuarios;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem2;

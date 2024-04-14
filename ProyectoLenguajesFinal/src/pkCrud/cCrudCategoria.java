@@ -16,8 +16,8 @@ public class cCrudCategoria {
             String llamarSP = "{call CREARCATEGORIA(?,?)}";
             CallableStatement cst = con.prepareCall(llamarSP);
 
-            cst.setInt(1, categoria.getIdCategoria());
-            cst.setString(2, categoria.getNombre());
+            cst.setInt(1, categoria.getidCategoria());
+            cst.setString(2, categoria.getnombre());
 
             cst.execute();
 
@@ -74,8 +74,8 @@ public class cCrudCategoria {
             String llamarSP = "{call sp_modificar_categoria(?,?)}";
             CallableStatement cst = con.prepareCall(llamarSP);
 
-            cst.setInt(1, categoria.getIdCategoria());
-            cst.setString(2, categoria.getNombre());
+            cst.setInt(1, categoria.getidCategoria());
+            cst.setString(2, categoria.getnombre());
            
 
             cst.execute();
@@ -98,7 +98,7 @@ public class cCrudCategoria {
             String llamarSP = "{call EliminarCategoria(?)}";
             CallableStatement cst = con.prepareCall(llamarSP);
 
-            cst.setInt(1, categoria.getIdCategoria());
+            cst.setInt(1, categoria.getidCategoria());
             cst.execute();
 
             JOptionPane.showMessageDialog(null, "categoria eliminada");

@@ -2,33 +2,33 @@
 package pkClases;
 
 public class cCategoria {
-   private int IdCategoria;  
-   private String Nombre;  
+   private int idCategoria;  
+   private String nombre;  
 
-    public cCategoria(int IdCategoria, String Nombre) {
-        this.IdCategoria = IdCategoria;
-        this.Nombre = Nombre;
+    public cCategoria(int idCategoria, String nombre) {
+        this.idCategoria = idCategoria;
+        this.nombre = nombre;
     }
 
     public cCategoria(int idCategoria) {
-    this.IdCategoria = IdCategoria;
+    this.idCategoria = idCategoria;
 
     }
 
-    public int getIdCategoria() {
-        return IdCategoria;
+    public int getidCategoria() {
+        return idCategoria;
     }
 
-    public void setIdCategoria(int IdCategoria) {
-        this.IdCategoria = IdCategoria;
+    public void setidCategoria(int idCategoria) {
+        this.idCategoria = idCategoria;
     }
 
-    public String getNombre() {
-        return Nombre;
+    public String getnombre() {
+        return nombre;
     }
 
-    public void setNombre(String Nombre) {
-        this.Nombre = Nombre;
+    public void setnombre(String nombre) {
+        this.nombre = nombre;
     }
    
    
