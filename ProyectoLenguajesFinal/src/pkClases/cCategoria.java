@@ -10,6 +10,11 @@ public class cCategoria {
         this.Nombre = Nombre;
     }
 
+    public cCategoria(int idCategoria) {
+    this.IdCategoria = IdCategoria;
+
+    }
+
     public int getIdCategoria() {
         return IdCategoria;
     }
