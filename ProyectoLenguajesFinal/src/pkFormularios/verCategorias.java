@@ -198,8 +198,7 @@ public class verCategorias extends javax.swing.JFrame {
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
         frmMenu menu = new frmMenu();
         menu.setVisible(true);
-        menu.setLocationRelativeTo(null);
-        dispose();
+        menu.setLocationRelativeTo(null);        
     }//GEN-LAST:event_btnVolverActionPerformed
 
     /**

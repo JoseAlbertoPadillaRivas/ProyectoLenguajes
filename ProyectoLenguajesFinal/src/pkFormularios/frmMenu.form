@@ -94,6 +94,24 @@
               <Properties>
                 <Property name="text" type="java.lang.String" value="Ver reservas"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbVerReservasActionPerformed"/>
+              </Events>
+            </MenuItem>
+          </SubComponents>
+        </Menu>
+        <Menu class="javax.swing.JMenu" name="jMenu5">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Devoluciones"/>
+          </Properties>
+          <SubComponents>
+            <MenuItem class="javax.swing.JMenuItem" name="btbDevoluciones">
+              <Properties>
+                <Property name="text" type="java.lang.String" value="Ver Devoluciones"/>
+              </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbDevolucionesActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
