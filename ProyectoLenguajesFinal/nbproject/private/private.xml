@@ -9,14 +9,14 @@
         <group>
             <file>file:/C:/Users/josep/OneDrive/Documentos/GitHub/ProyectoLenguajes/ProyectoLenguajesFinal/src/pkFormularios/verCategorias.java</file>
         </group>
-        <group name="Lenguajes de Base de Datos">
-            <file>file:/C:/Users/USER/Desktop/ProyectoLenguajes/ProyectoLenguajesFinal/src/pkCrud/cCrudCategoria.java</file>
-            <file>file:/C:/Users/USER/Desktop/ProyectoLenguajes/ProyectoLenguajesFinal/src/pkClases/cCategoria.java</file>
-        </group>
         <group name="ProyectoLenguajesFinal">
             <file>file:/C:/Users/USER/Desktop/ProyectoLenguajes/ProyectoLenguajesFinal/src/pkCrud/cCrudCategoria.java</file>
             <file>file:/C:/Users/USER/Desktop/ProyectoLenguajes/ProyectoLenguajesFinal/src/pkFormularios/verCategorias.java</file>
             <file>file:/C:/Users/USER/Desktop/ProyectoLenguajes/ProyectoLenguajesFinal/src/pkClases/cCategoria.java</file>
+            <file>file:/C:/Users/USER/Desktop/ProyectoLenguajes/ProyectoLenguajesFinal/src/pkFormularios/frmMenu.java</file>
+        </group>
+        <group name="Lenguajes de Base de Datos">
+            <file>file:/C:/Users/USER/Desktop/ProyectoLenguajes/ProyectoLenguajesFinal/src/pkFormularios/frmReservas.java</file>
             <file>file:/C:/Users/USER/Desktop/ProyectoLenguajes/ProyectoLenguajesFinal/src/pkFormularios/frmMenu.java</file>
         </group>
     </open-files>

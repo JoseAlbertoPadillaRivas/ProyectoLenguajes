@@ -142,10 +142,11 @@ public class frmCategoria extends javax.swing.JFrame {
     }//GEN-LAST:event_brnAgregarCategoriaActionPerformed
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
-       frmMenu menu = new frmMenu();
-        menu.setVisible(true);
-        menu.setLocationRelativeTo(null);
-        dispose();
+       this.dispose();
+//        frmMenu menu = new frmMenu();
+//        menu.setVisible(true);
+//        menu.setLocationRelativeTo(null);
+//        dispose();
     }//GEN-LAST:event_btnVolverActionPerformed
 
     /**

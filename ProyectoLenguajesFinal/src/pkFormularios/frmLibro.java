@@ -116,9 +116,7 @@ public class frmLibro extends javax.swing.JFrame {
                         .addComponent(txtPublicacion, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(80, 80, 80))
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(66, 66, 66)
+                .addGap(156, 156, 156)
                 .addComponent(jLabel1)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
@@ -126,6 +124,10 @@ public class frmLibro extends javax.swing.JFrame {
                 .addComponent(btnAnadir, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(btnListaLibros, javax.swing.GroupLayout.PREFERRED_SIZE, 103, javax.swing.GroupLayout.PREFERRED_SIZE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnVolver, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -199,10 +201,11 @@ public class frmLibro extends javax.swing.JFrame {
     }//GEN-LAST:event_btnAnadirActionPerformed
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
-        frmMenu menu = new frmMenu();
-        menu.setVisible(true);
-        menu.setLocationRelativeTo(null);
-        dispose();
+           dispose();
+//        frmMenu menu = new frmMenu();
+//        menu.setVisible(true);
+//        menu.setLocationRelativeTo(null);
+//        dispose();
     }//GEN-LAST:event_btnVolverActionPerformed
 
     private void btnListaLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnListaLibrosActionPerformed

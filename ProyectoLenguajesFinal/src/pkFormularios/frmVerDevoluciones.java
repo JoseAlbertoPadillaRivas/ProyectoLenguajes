@@ -243,9 +243,6 @@ public class frmVerDevoluciones extends javax.swing.JFrame {
     }//GEN-LAST:event_btnCargaDatosActionPerformed
 
     private void btnVolverActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnVolverActionPerformed
-        frmMenu menu = new frmMenu();
-        menu.setVisible(true);
-        menu.setLocationRelativeTo(null);
         dispose();
     }//GEN-LAST:event_btnVolverActionPerformed
 

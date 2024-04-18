@@ -14,7 +14,7 @@ public class cCrudUsuario {
         Connection con = cConexion.getConnection();
 
         try {
-            String llamarSP = "{call CREARUSUARIO(?,?,?,?,?,?)}";
+            String llamarSP = "{call CREAR_USUARIO(?,?,?,?,?,?)}";
             CallableStatement cst = con.prepareCall(llamarSP);
 
             cst.setInt(1, usuario.getCedula());

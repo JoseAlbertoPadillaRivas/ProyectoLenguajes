@@ -34,21 +34,20 @@
             <Property name="text" type="java.lang.String" value="Categorias"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JMenuItem" name="btbCategorias">
+            <MenuItem class="javax.swing.JMenuItem" name="btbAgregarCategoria">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Agregar Categor&#xed;a"/>
+                <Property name="text" type="java.lang.String" value="Agregar Categoria"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbCategoriasActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbAgregarCategoriaActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="brbVerCategoria">
+            <MenuItem class="javax.swing.JMenuItem" name="btbVerCategorias">
               <Properties>
-                <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Ver Categorias"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="brbVerCategoriaActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbVerCategoriasActionPerformed"/>
               </Events>
             </MenuItem>
           </SubComponents>
@@ -63,17 +62,19 @@
           <SubComponents>
             <MenuItem class="javax.swing.JMenuItem" name="btbLibros">
               <Properties>
-                <Property name="text" type="java.lang.String" value="Administrar Libros"/>
+                <Property name="text" type="java.lang.String" value="Agregar Libros"/>
               </Properties>
               <Events>
                 <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbLibrosActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="btbVerLibros">
+            <MenuItem class="javax.swing.JMenuItem" name="btbVerLibros">
               <Properties>
-                <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Ver Libros"/>
               </Properties>
+              <Events>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbVerLibrosActionPerformed"/>
+              </Events>
             </MenuItem>
           </SubComponents>
         </Menu>
@@ -120,18 +121,16 @@
             <Property name="text" type="java.lang.String" value="Usuarios"/>
           </Properties>
           <SubComponents>
-            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="btbUsuarios">
+            <MenuItem class="javax.swing.JMenuItem" name="btbAgregarUsuario">
               <Properties>
-                <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Agregar Usuario"/>
               </Properties>
               <Events>
-                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbUsuariosActionPerformed"/>
+                <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btbAgregarUsuarioActionPerformed"/>
               </Events>
             </MenuItem>
-            <MenuItem class="javax.swing.JCheckBoxMenuItem" name="btbVerUsuarios">
+            <MenuItem class="javax.swing.JMenuItem" name="btbVerUsuarios">
               <Properties>
-                <Property name="selected" type="boolean" value="true"/>
                 <Property name="text" type="java.lang.String" value="Ver Usuarios"/>
               </Properties>
               <Events>

@@ -1,4 +1,3 @@
-
 package pkFormularios;
 
 public class frmMenu extends javax.swing.JFrame {
@@ -28,19 +27,19 @@ public class frmMenu extends javax.swing.JFrame {
         jComboBox1 = new javax.swing.JComboBox<>();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu2 = new javax.swing.JMenu();
-        btbCategorias = new javax.swing.JMenuItem();
-        brbVerCategoria = new javax.swing.JCheckBoxMenuItem();
+        btbAgregarCategoria = new javax.swing.JMenuItem();
+        btbVerCategorias = new javax.swing.JMenuItem();
         jMenu1 = new javax.swing.JMenu();
         btbLibros = new javax.swing.JMenuItem();
-        btbVerLibros = new javax.swing.JCheckBoxMenuItem();
+        btbVerLibros = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         btbReservar = new javax.swing.JMenuItem();
         btbVerReservas = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         btbDevoluciones = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
-        btbUsuarios = new javax.swing.JCheckBoxMenuItem();
-        btbVerUsuarios = new javax.swing.JCheckBoxMenuItem();
+        btbAgregarUsuario = new javax.swing.JMenuItem();
+        btbVerUsuarios = new javax.swing.JMenuItem();
 
         jMenuItem1.setText("jMenuItem1");
 
@@ -58,22 +57,21 @@ public class frmMenu extends javax.swing.JFrame {
 
         jMenu2.setText("Categorias");
 
-        btbCategorias.setText("Agregar Categoría");
-        btbCategorias.addActionListener(new java.awt.event.ActionListener() {
+        btbAgregarCategoria.setText("Agregar Categoria");
+        btbAgregarCategoria.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btbCategoriasActionPerformed(evt);
+                btbAgregarCategoriaActionPerformed(evt);
             }
         });
-        jMenu2.add(btbCategorias);
+        jMenu2.add(btbAgregarCategoria);
 
-        brbVerCategoria.setSelected(true);
-        brbVerCategoria.setText("Ver Categorias");
-        brbVerCategoria.addActionListener(new java.awt.event.ActionListener() {
+        btbVerCategorias.setText("Ver Categorias");
+        btbVerCategorias.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                brbVerCategoriaActionPerformed(evt);
+                btbVerCategoriasActionPerformed(evt);
             }
         });
-        jMenu2.add(brbVerCategoria);
+        jMenu2.add(btbVerCategorias);
 
         jMenuBar1.add(jMenu2);
 
@@ -84,7 +82,7 @@ public class frmMenu extends javax.swing.JFrame {
             }
         });
 
-        btbLibros.setText("Administrar Libros");
+        btbLibros.setText("Agregar Libros");
         btbLibros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btbLibrosActionPerformed(evt);
@@ -92,8 +90,12 @@ public class frmMenu extends javax.swing.JFrame {
         });
         jMenu1.add(btbLibros);
 
-        btbVerLibros.setSelected(true);
         btbVerLibros.setText("Ver Libros");
+        btbVerLibros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btbVerLibrosActionPerformed(evt);
+            }
+        });
         jMenu1.add(btbVerLibros);
 
         jMenuBar1.add(jMenu1);
@@ -132,16 +134,14 @@ public class frmMenu extends javax.swing.JFrame {
 
         jMenu4.setText("Usuarios");
 
-        btbUsuarios.setSelected(true);
-        btbUsuarios.setText("Agregar Usuario");
-        btbUsuarios.addActionListener(new java.awt.event.ActionListener() {
+        btbAgregarUsuario.setText("Agregar Usuario");
+        btbAgregarUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btbUsuariosActionPerformed(evt);
+                btbAgregarUsuarioActionPerformed(evt);
             }
         });
-        jMenu4.add(btbUsuarios);
+        jMenu4.add(btbAgregarUsuario);
 
-        btbVerUsuarios.setSelected(true);
         btbVerUsuarios.setText("Ver Usuarios");
         btbVerUsuarios.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -171,15 +171,15 @@ public class frmMenu extends javax.swing.JFrame {
     private void btbLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbLibrosActionPerformed
         frmLibro Libros = new frmLibro();
         Libros.setVisible(true);
-        Libros.setLocationRelativeTo(null);        
+        Libros.setLocationRelativeTo(null);
     }//GEN-LAST:event_btbLibrosActionPerformed
 
-    private void btbCategoriasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbCategoriasActionPerformed
-        frmCategoria categoria = new frmCategoria();
-        categoria.setVisible(true);
-        categoria.setLocationRelativeTo(null);
-        
-    }//GEN-LAST:event_btbCategoriasActionPerformed
+    private void btbVerCategoriasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbVerCategoriasActionPerformed
+        verCategorias verCategoria = new verCategorias();
+        verCategoria.setVisible(true);
+        verCategoria.setLocationRelativeTo(null);
+
+    }//GEN-LAST:event_btbVerCategoriasActionPerformed
 
     private void btbReservarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbReservarActionPerformed
         frmReservas reservas = new frmReservas();
@@ -188,29 +188,9 @@ public class frmMenu extends javax.swing.JFrame {
     }//GEN-LAST:event_btbReservarActionPerformed
 
     private void jMenu1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenu1ActionPerformed
-        frmListaLibros verLibros = new frmListaLibros();
-        verLibros.setVisible(true);
-        verLibros.setLocationRelativeTo(null);
+
 
     }//GEN-LAST:event_jMenu1ActionPerformed
-
-    private void btbUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbUsuariosActionPerformed
-        frmRegistrarse agregarUsuario = new frmRegistrarse();
-        agregarUsuario.setVisible(true);
-        agregarUsuario.setLocationRelativeTo(null);
-    }//GEN-LAST:event_btbUsuariosActionPerformed
-
-    private void btbVerUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbVerUsuariosActionPerformed
-        verUsuarios verUsuarios = new verUsuarios();
-        verUsuarios.setVisible(true);
-        verUsuarios.setLocationRelativeTo(null);
-    }//GEN-LAST:event_btbVerUsuariosActionPerformed
-
-    private void brbVerCategoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_brbVerCategoriaActionPerformed
-        verCategorias verCategorias = new verCategorias();
-        verCategorias.setVisible(true);
-        verCategorias.setLocationRelativeTo(null);
-    }//GEN-LAST:event_brbVerCategoriaActionPerformed
 
     private void btbVerReservasActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbVerReservasActionPerformed
         frmVerReservas reservas = new frmVerReservas();
@@ -223,6 +203,30 @@ public class frmMenu extends javax.swing.JFrame {
         devoluciones.setVisible(true);
         devoluciones.setLocationRelativeTo(null);
     }//GEN-LAST:event_btbDevolucionesActionPerformed
+
+    private void btbVerLibrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbVerLibrosActionPerformed
+        frmListaLibros verLibros = new frmListaLibros();
+        verLibros.setVisible(true);
+        verLibros.setLocationRelativeTo(null);
+    }//GEN-LAST:event_btbVerLibrosActionPerformed
+
+    private void btbAgregarUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbAgregarUsuarioActionPerformed
+        frmRegistrarse agregarUsuario = new frmRegistrarse();
+        agregarUsuario.setVisible(true);
+        agregarUsuario.setLocationRelativeTo(null);
+    }//GEN-LAST:event_btbAgregarUsuarioActionPerformed
+
+    private void btbVerUsuariosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbVerUsuariosActionPerformed
+        verUsuarios verUsuarios = new verUsuarios();
+        verUsuarios.setVisible(true);
+        verUsuarios.setLocationRelativeTo(null);
+    }//GEN-LAST:event_btbVerUsuariosActionPerformed
+
+    private void btbAgregarCategoriaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btbAgregarCategoriaActionPerformed
+        frmCategoria agregarCategoria = new frmCategoria();
+        agregarCategoria.setVisible(true);
+        agregarCategoria.setLocationRelativeTo(null);                
+    }//GEN-LAST:event_btbAgregarCategoriaActionPerformed
 
     /**
      * @param args the command line arguments
@@ -261,15 +265,15 @@ public class frmMenu extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JCheckBoxMenuItem brbVerCategoria;
-    private javax.swing.JMenuItem btbCategorias;
+    private javax.swing.JMenuItem btbAgregarCategoria;
+    private javax.swing.JMenuItem btbAgregarUsuario;
     private javax.swing.JMenuItem btbDevoluciones;
     private javax.swing.JMenuItem btbLibros;
     private javax.swing.JMenuItem btbReservar;
-    private javax.swing.JCheckBoxMenuItem btbUsuarios;
-    private javax.swing.JCheckBoxMenuItem btbVerLibros;
+    private javax.swing.JMenuItem btbVerCategorias;
+    private javax.swing.JMenuItem btbVerLibros;
     private javax.swing.JMenuItem btbVerReservas;
-    private javax.swing.JCheckBoxMenuItem btbVerUsuarios;
+    private javax.swing.JMenuItem btbVerUsuarios;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
