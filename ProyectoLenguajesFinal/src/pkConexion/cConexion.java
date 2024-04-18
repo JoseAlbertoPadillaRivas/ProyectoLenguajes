@@ -6,8 +6,8 @@ import javax.swing.JOptionPane;
 
 public class cConexion {
     
-    public static final String URL = "jdbc:oracle:thin:@localhost:1521:xe";
-    public static final String USER = "ProyectoLenguajes"; //ProyectoLenguajesBD
+    public static final String URL = "jdbc:oracle:thin:@localhost:1521:orcl";
+    public static final String USER = "ProyectoLenguajesBD"; //ProyectoLenguajesBD
     public static final String PASSWORD = "1234";
     
     public static Connection getConnection()

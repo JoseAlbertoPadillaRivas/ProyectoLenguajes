@@ -14,7 +14,7 @@ public class cCrudUsuario {
         Connection con = cConexion.getConnection();
 
         try {
-            String llamarSP = "{call CREAR_USUARIO(?,?,?,?,?,?)}";
+            String llamarSP = "{call CREARUSUARIO(?,?,?,?,?,?)}";
             CallableStatement cst = con.prepareCall(llamarSP);
 
             cst.setInt(1, usuario.getCedula());
@@ -56,8 +56,9 @@ public class cCrudUsuario {
                 String nombre = rs.getString("NOMBRE");
                 String apellidos = rs.getString("APELLIDOS");
                 String username = rs.getString("USERNAME");
+                String password = rs.getString("PASSWORD");
                 int idrol = rs.getInt("IDROL");
-                cUsuario usuario = new cUsuario(cedula, nombre, apellidos, username, idrol);
+                cUsuario usuario = new cUsuario(cedula, nombre, apellidos, username,password, idrol);
                 listaUsuarios.add(usuario);
             }
         } catch (SQLException e) {

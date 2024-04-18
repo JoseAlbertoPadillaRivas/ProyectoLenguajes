@@ -27,7 +27,7 @@ public class verUsuarios extends javax.swing.JFrame {
         initComponents();
         usuario = new pkCrud.cCrudUsuario();
         cargarRegistros();
-                this.setLocationRelativeTo(null);
+        this.setLocationRelativeTo(null);
 
     }
 
@@ -256,14 +256,16 @@ public class verUsuarios extends javax.swing.JFrame {
 
     private void btnCargarCamposActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCargarCamposActionPerformed
         // TODO add your handling code here:
-                try {
+        try {
             int modificar = tblUsuarios.getSelectedRow();
             if (modificar >= 0) {
                 txtCedula.setText(tblUsuarios.getValueAt(modificar, 0).toString());
                 txtNombre.setText(tblUsuarios.getValueAt(modificar, 1).toString());
                 txtApellidos.setText(tblUsuarios.getValueAt(modificar, 2).toString());
                 txtUsername.setText(tblUsuarios.getValueAt(modificar, 3).toString());
-                txtIdRol.setText(tblUsuarios.getValueAt(modificar,4 ).toString());
+                txtContrasenna.setText(tblUsuarios.getValueAt(modificar, 4).toString());
+
+                txtIdRol.setText(tblUsuarios.getValueAt(modificar, 5).toString());
 
             } else {
                 JOptionPane.showMessageDialog(null, "No ha selecionado una fila para modificar");
@@ -324,15 +326,16 @@ public class verUsuarios extends javax.swing.JFrame {
             modeloTabla.addColumn("Nombre");
             modeloTabla.addColumn("Apellido");
             modeloTabla.addColumn("Username");
+            modeloTabla.addColumn("Contraseña");
             modeloTabla.addColumn("IDRol");
 
-            // Recorrer la lista de usuarios y agregar cada usuario como una fila en el modelo
             for (cUsuario usuario : listaUsuarios) {
                 Object[] fila = {
                     usuario.getCedula(),
                     usuario.getNombre(),
                     usuario.getApellidos(),
                     usuario.getUsername(),
+                    usuario.getPassword(),
                     usuario.getIdrol(),};
                 modeloTabla.addRow(fila);
             }
@@ -343,7 +346,7 @@ public class verUsuarios extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(this, "Error al cargar los registros de usuarios.");
         }
     }
-    
+
     public void limpiar() {
         txtCedula.setText("");
         txtNombre.setText("");
