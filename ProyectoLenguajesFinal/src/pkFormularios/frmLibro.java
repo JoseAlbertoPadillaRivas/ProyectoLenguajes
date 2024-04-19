@@ -68,6 +68,7 @@ public class frmLibro extends javax.swing.JFrame {
 
         jLabel6.setText("PUBLICACION");
 
+        btnAnadir.setBackground(new java.awt.Color(204, 255, 204));
         btnAnadir.setText("Añadir");
         btnAnadir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -75,6 +76,7 @@ public class frmLibro extends javax.swing.JFrame {
             }
         });
 
+        btnVolver.setBackground(new java.awt.Color(204, 204, 255));
         btnVolver.setText("VOLVER");
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -82,6 +84,7 @@ public class frmLibro extends javax.swing.JFrame {
             }
         });
 
+        btnListaLibros.setBackground(new java.awt.Color(255, 255, 204));
         btnListaLibros.setText("Lista Libros");
         btnListaLibros.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

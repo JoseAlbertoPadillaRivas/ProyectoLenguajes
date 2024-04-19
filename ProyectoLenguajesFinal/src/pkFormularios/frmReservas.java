@@ -47,6 +47,7 @@ public class frmReservas extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        btnBuscarLibro.setBackground(new java.awt.Color(255, 204, 255));
         btnBuscarLibro.setText("BUSCAR LIBRO");
         btnBuscarLibro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -60,6 +61,7 @@ public class frmReservas extends javax.swing.JFrame {
 
         jLabel6.setText("RESERVAR LIBRO");
 
+        btnReservar.setBackground(new java.awt.Color(204, 255, 204));
         btnReservar.setText("RESERVAR");
         btnReservar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -73,6 +75,7 @@ public class frmReservas extends javax.swing.JFrame {
 
         jLabel3.setText("CEDULA");
 
+        btnVolver.setBackground(new java.awt.Color(204, 204, 255));
         btnVolver.setText("VOLVER");
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

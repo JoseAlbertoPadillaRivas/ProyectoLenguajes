@@ -92,6 +92,7 @@ public class frmVerReservas extends javax.swing.JFrame {
 
         jLabel6.setText("FECHA RESERVA");
 
+        btnEditaReserva.setBackground(new java.awt.Color(255, 255, 204));
         btnEditaReserva.setText("EDITAR RESERVA");
         btnEditaReserva.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -99,6 +100,7 @@ public class frmVerReservas extends javax.swing.JFrame {
             }
         });
 
+        btnCargaDatos.setBackground(new java.awt.Color(204, 204, 255));
         btnCargaDatos.setText("CARGAR DATOS");
         btnCargaDatos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -106,6 +108,7 @@ public class frmVerReservas extends javax.swing.JFrame {
             }
         });
 
+        btnDevolucion.setBackground(new java.awt.Color(204, 204, 255));
         btnDevolucion.setText("DEVOLUCION");
         btnDevolucion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -113,6 +116,7 @@ public class frmVerReservas extends javax.swing.JFrame {
             }
         });
 
+        tbEliminarReserva.setBackground(new java.awt.Color(255, 102, 102));
         tbEliminarReserva.setText("ELIMINAR RESERVA");
         tbEliminarReserva.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -120,6 +124,7 @@ public class frmVerReservas extends javax.swing.JFrame {
             }
         });
 
+        btnVolver.setBackground(new java.awt.Color(204, 204, 255));
         btnVolver.setText("VOLVER");
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -153,7 +158,7 @@ public class frmVerReservas extends javax.swing.JFrame {
                     .addComponent(btnEditaReserva, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnDevolucion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(tbEliminarReserva, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnCargaDatos, javax.swing.GroupLayout.PREFERRED_SIZE, 113, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnCargaDatos))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
@@ -194,8 +199,9 @@ public class frmVerReservas extends javax.swing.JFrame {
                         .addGap(22, 22, 22)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel5)
-                            .addComponent(txtFechaDevolucion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(28, 28, 28)
+                            .addComponent(txtFechaDevolucion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(btnDevolucion))
+                        .addGap(27, 27, 27)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 218, Short.MAX_VALUE))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(26, 26, 26)
@@ -204,8 +210,6 @@ public class frmVerReservas extends javax.swing.JFrame {
                         .addComponent(btnEditaReserva)
                         .addGap(18, 18, 18)
                         .addComponent(tbEliminarReserva)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnDevolucion)
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );

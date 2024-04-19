@@ -76,6 +76,7 @@ public class frmVerDevoluciones extends javax.swing.JFrame {
 
         jLabel6.setText("ESTADO");
 
+        btnEditarDevolucion.setBackground(new java.awt.Color(255, 255, 204));
         btnEditarDevolucion.setText("EDITAR DEVOLUCION");
         btnEditarDevolucion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -83,6 +84,7 @@ public class frmVerDevoluciones extends javax.swing.JFrame {
             }
         });
 
+        btnCargaDatos.setBackground(new java.awt.Color(204, 204, 255));
         btnCargaDatos.setText("CARGAR DATOS");
         btnCargaDatos.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -90,6 +92,7 @@ public class frmVerDevoluciones extends javax.swing.JFrame {
             }
         });
 
+        tbEliminarDevolucion.setBackground(new java.awt.Color(255, 102, 102));
         tbEliminarDevolucion.setText("ELIMINAR DEVOLUCION");
         tbEliminarDevolucion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -97,6 +100,7 @@ public class frmVerDevoluciones extends javax.swing.JFrame {
             }
         });
 
+        btnVolver.setBackground(new java.awt.Color(204, 204, 255));
         btnVolver.setText("VOLVER");
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

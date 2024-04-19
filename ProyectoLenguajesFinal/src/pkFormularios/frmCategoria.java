@@ -46,6 +46,7 @@ public class frmCategoria extends javax.swing.JFrame {
 
         jLabel3.setText("Añadir Categoria");
 
+        brnAgregarCategoria.setBackground(new java.awt.Color(204, 255, 204));
         brnAgregarCategoria.setText("Añadir");
         brnAgregarCategoria.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -53,6 +54,7 @@ public class frmCategoria extends javax.swing.JFrame {
             }
         });
 
+        btnVolver.setBackground(new java.awt.Color(204, 204, 255));
         btnVolver.setText("Volver");
         btnVolver.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

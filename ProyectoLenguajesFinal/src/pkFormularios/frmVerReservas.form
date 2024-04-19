@@ -79,7 +79,7 @@
                       <Component id="btnEditaReserva" max="32767" attributes="0"/>
                       <Component id="btnDevolucion" alignment="0" max="32767" attributes="0"/>
                       <Component id="tbEliminarReserva" max="32767" attributes="0"/>
-                      <Component id="btnCargaDatos" alignment="0" min="-2" pref="113" max="-2" attributes="0"/>
+                      <Component id="btnCargaDatos" alignment="0" min="-2" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -131,8 +131,9 @@
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel5" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="txtFechaDevolucion" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="btnDevolucion" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
-                          <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="27" max="-2" attributes="0"/>
                           <Component id="jScrollPane1" pref="218" max="32767" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -142,8 +143,6 @@
                           <Component id="btnEditaReserva" min="-2" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="tbEliminarReserva" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="btnDevolucion" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
                   </Group>
@@ -247,6 +246,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnEditaReserva">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="cc" green="ff" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="EDITAR RESERVA"/>
           </Properties>
           <Events>
@@ -255,6 +257,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnCargaDatos">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="cc" red="cc" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="CARGAR DATOS"/>
           </Properties>
           <Events>
@@ -263,6 +268,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnDevolucion">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="cc" red="cc" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="DEVOLUCION"/>
           </Properties>
           <Events>
@@ -271,6 +279,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="tbEliminarReserva">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="66" green="66" red="ff" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="ELIMINAR RESERVA"/>
           </Properties>
           <Events>
@@ -281,6 +292,9 @@
         </Component>
         <Component class="javax.swing.JButton" name="btnVolver">
           <Properties>
+            <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="cc" red="cc" type="rgb"/>
+            </Property>
             <Property name="text" type="java.lang.String" value="VOLVER"/>
           </Properties>
           <Events>

@@ -59,6 +59,7 @@ public class frmRegistrarse extends javax.swing.JFrame {
 
         jLabel5.setText("Contraseña");
 
+        btnRegistrarse.setBackground(new java.awt.Color(204, 255, 204));
         btnRegistrarse.setText("Registrarse");
         btnRegistrarse.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
